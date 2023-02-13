@@ -6,7 +6,7 @@ const insertData = require('./insert-data');
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://yigitemik:34ygt44B@cluster0.ipxs6is.mongodb.net/Users?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://yigitemik:<password>@cluster0.ipxs6is.mongodb.net/Users?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
         // Insert all users
